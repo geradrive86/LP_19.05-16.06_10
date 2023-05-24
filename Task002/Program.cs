@@ -1,24 +1,29 @@
 ﻿// Задача 2: Напишите программу, которая 
 //1.на вход gринимает два числа
 //2.выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
 
 Console.Write("Введите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите второе число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 
-if(num1 > num2)
+if (a > b)
 {
-    Console.WriteLine($"{num1} больше {num2}");
+    Console.WriteLine($"Число {a} - большее, число {b} - меньшее");
+}
+
+else
+
+    if (a < b)
+{
+    Console.WriteLine($"Число {b} - большее, число {a} - меньшее");
 }
 else
-if(num1 < num2)
+if (a == b)
 {
-    Console.WriteLine($"{num1} меньше {num2}");
-}
-else
-if(num1 == num2)
-{
-    Console.WriteLine($" данные числа не подходят под условия, так как они равны)");
-}
+    Console.WriteLine($" Данные числа > {a} < и > {b} < не подходят под условия, так как они равны)");
+} 
